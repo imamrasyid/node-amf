@@ -1,6 +1,6 @@
 {
   "name": "amf",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "\"Action Message Format\" read() and write() functions for Buffers",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/TooTallNate/node-amf.git"
+    "url": "git://github.com/imamrasyid/node-amf.git"
   },
-  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://n8.io)",
+  "author": "Imam Rasyid",
   "license": "MIT"
 }

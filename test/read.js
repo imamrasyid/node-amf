@@ -57,7 +57,7 @@ describe('read()', function () {
     var data = fs.readFileSync(path.resolve(__dirname, 'fixtures', 'amf0-ref-test.bin'));
     var obj = amf.read(data, 0);
     assert(obj[0] === obj[1]);
-    assert.deepEqual(Object.keys(obj), [ '0', '1' ]);
+    assert.deepEqual(Object.keys(obj), ['0', '1']);
     assert.equal(obj[0].bar, 3.14);
     assert.equal(obj[0].foo, 'baz');
   });
@@ -68,7 +68,7 @@ describe('read()', function () {
     var array = amf.read(data, 0);
     assert(Array.isArray(array));
     assert.equal(4, array.length);
-    assert.deepEqual(Object.keys(array), [ '0', '1', '2', '3' ]);
+    assert.deepEqual(Object.keys(array), ['0', '1', '2', '3']);
     assert.equal('a', array[0]);
     assert.equal('b', array[1]);
     assert.equal('c', array[2]);
@@ -91,7 +91,7 @@ describe('read()', function () {
     var data = fs.readFileSync(path.resolve(__dirname, 'fixtures', 'amf0-date.bin'));
 
     var date = amf.read(data, 0);
-    assert(util.isDate(date));
+    assert(date instanceof Date);
     assert.equal(1590796800000, date.getTime());
   });
 
@@ -157,15 +157,17 @@ describe('read()', function () {
       assert.equal(obj.audiosamplerate, 44100);
       assert.equal(obj.audiochannels, 2);
       assert.deepEqual(obj.trackinfo, [
-        { length: 4374000,
+        {
+          length: 4374000,
           timescale: 25000,
           language: 'eng',
-          sampledescription: [ { sampletype: 'avc1' } ]
+          sampledescription: [{ sampletype: 'avc1' }]
         },
-        { length: 7716864,
+        {
+          length: 7716864,
           timescale: 44100,
           language: 'eng',
-          sampledescription: [ { sampletype: 'mp4a' } ]
+          sampledescription: [{ sampletype: 'mp4a' }]
         }
       ]);
 

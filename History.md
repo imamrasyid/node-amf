@@ -1,3 +1,13 @@
+0.2.0 / 2023-08-15
+==================
+
+ - Implementasi dukungan penuh untuk AMF3
+ - Menambahkan fungsi read untuk AMF3 dengan dukungan tipe data: null, boolean, integer, double, string, array, object, XML, dan ByteArray
+ - Menambahkan fungsi write untuk AMF3 dengan dukungan tipe data: null, boolean, integer, double, string, array, object, XML, dan ByteArray
+ - Menambahkan deteksi versi AMF otomatis
+ - Menambahkan fungsi helper untuk membuat objek AMF3, XML, dan ByteArray
+ - Menambahkan unit test untuk semua fitur AMF3
+
 0.1.0 / 2013-02-24
 ==================
 
