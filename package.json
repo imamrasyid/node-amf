@@ -4,7 +4,8 @@
   "description": "\"Action Message Format\" read() and write() functions for Buffers",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "inspect": "node bin/amf-inspect"
   },
   "devDependencies": {
     "mocha": "*"
@@ -14,5 +15,8 @@
     "url": "git://github.com/imamrasyid/node-amf.git"
   },
   "author": "Imam Rasyid",
-  "license": "MIT"
+  "license": "MIT",
+  "bin": {
+    "amf-inspect": "bin/amf-inspect"
+  }
 }
