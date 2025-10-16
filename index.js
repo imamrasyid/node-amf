@@ -5,6 +5,7 @@ exports.amf3Types = constants.amf3Types;
 
 exports.read = require('./lib/read');
 exports.write = require('./lib/write');
+exports.remoting = require('./lib/remoting');
 
 // High-level helpers with auto-detect (AMF0/AMF3)
 exports.decode = function decode(buffer, options) {
